@@ -1,0 +1,9 @@
+The perceptron takes the input, multiplies it by a weight, adds a bias, and then passes the result through an activation function to produce an output.
+
+In this version, the weight and bias are random for each activation function so the outputs are consistent and easier to follow. It supports three activation functions:
+
+1. Linear: Just outputs the weighted sum as is.
+2. Sigmoid: Squashes the output to a value between 0 and 1 — great for probabilities.
+3. Tanh: Squashes the output between -1 and 1, centered around zero.
+
+This code also shows a bar chart comparing the results side by side.
