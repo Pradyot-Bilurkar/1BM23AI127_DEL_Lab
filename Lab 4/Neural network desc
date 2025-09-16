@@ -1,0 +1,5 @@
+This code trains a small neural network to solve the XOR problem, achieving nearly 100% accuracy after 10,000 epochs. 
+The error steadily decreases during training, as shown in the plotted loss curve. 
+Final outputs closely match the expected XOR values, correctly predicting all inputs when rounded. 
+The learned weights and biases reflect the network’s adaptation to the non-linear XOR pattern.
+Overall, the network effectively models the XOR function despite its non-linearity.
