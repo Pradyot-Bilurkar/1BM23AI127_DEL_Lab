@@ -1,0 +1,6 @@
+The provided Python code uses TensorFlow and Keras to compare the performance of two neural network regularization techniques—Dropout and Gradient Clipping—on a synthetic binary classification dataset. 
+A simple feedforward neural network is built in both cases. The dropout model includes Dropout layers with a rate of 0.2, while the gradient clipping model uses the Adam optimizer with clipnorm=1.0 to prevent exploding gradients.
+Both models are trained for 50 epochs, and their training and validation accuracy are plotted.
+From the plotted graph, we observe that the dropout model generalizes better—its validation accuracy steadily improves and reaches a higher level (~95%) compared to the gradient clipping model (~85%), which appears to overfit after a 
+point (training accuracy increases while validation accuracy plateaus or slightly decreases). 
+This indicates that Dropout was more effective in preventing overfitting for this dataset than gradient clipping alone.
