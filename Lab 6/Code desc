@@ -1,0 +1,6 @@
+This code compares three robustness-enhancing techniques—adversarial training, Tangent Prop, and Tangent Distance classification—using the Fashion-MNIST dataset. 
+It first loads and preprocesses the data, then builds a simple neural network with TensorFlow/Keras. 
+The adversarial training section generates perturbed (adversarial) samples using the Fast Gradient Sign Method (FGSM) and retrains the model on both clean and adversarial data to improve robustness. 
+The Tangent Prop section adds a custom layer that injects small random perturbations during training to encourage local invariance and smoother decision boundaries. 
+The Tangent Distance classifier, implemented separately using NumPy, classifies each test image by finding the nearest training image in feature space based on Euclidean distance. 
+Finally, the script plots training loss and accuracy for comparison and prints the final test accuracies for all three methods.
